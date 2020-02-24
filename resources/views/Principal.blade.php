@@ -39,7 +39,6 @@
  
     <b-carousel
       id="carousel-1"
-  
       :interval="20000"
       controls
       indicators
