@@ -1,5 +1,5 @@
-@extends('layouts.app')
-@section('content')
+@extends('layouts.Plantilla_Principal')
+@section('content_main')
 <div class="row justify-content-center">
     <div class="col-md-8">
         <div class="card-group">

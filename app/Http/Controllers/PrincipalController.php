@@ -29,5 +29,10 @@ class PrincipalController extends Controller
   
     	return view('Principal');
     }
-  
+    public function Membresia()
+    {
+        
+        return view('membresias');
+    }
+    
 }

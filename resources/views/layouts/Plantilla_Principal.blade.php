@@ -10,28 +10,28 @@
       <meta name="viewport" content="width=device-width, initial-scale=0.7"><meta name="Classification" content="Quimica "><meta name="msapplication-TileColor" content=" #009900" />
       <meta charset="utf-8">
   
-      <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?<?=date("my")?>">
+      <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?<?=date("my")?>1">
           @section('styles') 
    	  @show	  
    </head>
    <body>
-   <div id="container-fluid p-0 m-0" >     
-	@section('header') 
+    
+@section('header') 
 	@include('partials.menu_user') 
-	@show 
-
-@section('content_main')
 @show 
-        
-@section('footer')
-        <footer class="  fixed-bottom   bg-white">
-            <div class=" text-center pb-2">© <?=date("Y") ?> Copyright:
-              <a href=" ">{{env('APP_NAME')}}</a>
-            </div>
-        </footer>
-@show
+	<div class="container-fluid p-0 m-0 content" id="principal"> 
+@section('content_main')
+
+@show 
     </div>
-   <script type="text/javascript" src="{{asset('js/app.js') }}?<?="0.".date("my").".0"?>"></script>
+@section('footer')
+    <footer class="  fixed-bottom   bg-white">
+         <div class=" text-center pb-2">© <?=date("Y") ?> Copyright:
+            <a href=" ">{{env('APP_NAME')}}</a>
+          </div>
+    </footer>
+@show
+    <script type="text/javascript" src="{{asset('js/app.js') }}?<?="0.".date("my").".1"?>"></script>
 @yield('scripts')
    </body>
 </html>

@@ -1,4 +1,4 @@
-        <nav class="navbar navbar-expand navbar-dark  bg-primary default-color m-0 p-0" style="font-size: 20px;"> 
+        <nav class="navbar navbar-expand navbar-light  bg-light default-color m-0 p-0 pt-1" style="font-size: 20px;"> 
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>

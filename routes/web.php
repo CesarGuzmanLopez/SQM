@@ -1,5 +1,6 @@
 <?php
 Route::get('/','PrincipalController@index');
+Route::get('/Membresia','PrincipalController@Membresia');
 
 Auth::routes(['register' => false]);
 

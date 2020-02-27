@@ -40,4 +40,24 @@ if($("#AUX").length!=0)
 app = new Vue({
     el: '#AUX'
 });
- 
+window.onscroll = function() {myFunction()};
+
+//Get the navbar
+var navbar = document.getElementById("navbar");
+var contentprin =  document.getElementById("principal");
+//Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+//Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+	if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky");
+		contentprin.classList.add("content_prin");
+		
+	} else {
+		navbar.classList.remove("sticky");
+		contentprin.classList.remove("content_prin");
+	}
+	
+}
+

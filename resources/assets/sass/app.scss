@@ -19,11 +19,9 @@ footer{
 }
 #Menu{
 	.nav-link{
-		padding: 0rem 1rem;
-		
+		padding: 0rem 1rem; 
 	}
-	.navbar-brand{
-		
+	.navbar-brand{ 
 		padding: 0rem 1rem;
 	}
 	input{
@@ -31,28 +29,42 @@ footer{
        border:none !important;
  	   border-radius: 0px !important;
 
-	    padding-top: 0px !important;
-	    padding-bottom: 0px!important;
-	    height: 30px !important;
-
-	};
+	   padding-top: 0px !important;
+	   padding-bottom: 0px!important;
+	   height: 30px !important;
+   };
 	
 	.border-bottom{
 		border-bottom:5px;
 	}
 }
-#menu_prin{
-	position:relative;
 
+/* Style the navbar */
+#navbar {
+ 	z-index: 40;
+  	margin-top: 14px;
+.btn-primary {
+    color: #fff;
+    background-color: transparent; 
+     border-color: transparent; 
 }
-.menu_prin{
-	z-index:30;
-	position: absolute;
-	margin-bottom: -20px;
 }
-#slider_prin{ 
-		margin-top:20px;
-		z-index:20;
-
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: -1px;
+  width: 100%;
+}
+#principal{
+	margin-top: -350px;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + #principal {
+  padding-top: 210px;
+}
+.content_prin{
+	animation-duration: 3s;
+	margin-top: 70px
+	!important;
 }
 @import 'variables';
