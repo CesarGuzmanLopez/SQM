@@ -12,21 +12,7 @@
       <li class="nav-item">
         <a class="nav-link" href="{{ url('/admin/home')}}">Ingresar</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
+      </ul>
     <form class="form-inline my-2 my-lg-0">
      <span class=""> <input class="form-control border-bottom border-secondary mr-sm-2 text-white py-0 my-0 " style="height: 14px !important; font-size:12px;"   type="search" placeholder="Buscar" aria-label="Search"></span>
     </form>
@@ -34,83 +20,105 @@
 </nav> 
 <div class="row pt-2 pl-3 m-0 mb-2   m-0 rounded mb-0 ">   
   <div  class="col-2  p-2 col-md-1 align-self-center m-0   p-0" >
-		 <b-img  src="./img/SQM.png" fluid-grow alt="Fluid image"></b-img>
+		<a href="https://sqm.org.mx/"> 
+	 <b-img  src="{{ asset('/img/SQM.png')}}" fluid-grow alt="Fluid image"></b-img>	</a>
   </div>
-  <div  class="offset-md-2 col-5 col-md-3 align-self-center px-4 border-right border-gray" >
-  	  <b-img  src="./img/Journal_Chemistry.png " fluid-grow alt="Fluid image"></b-img>
+  <div  class=" col-5 col-md-3 align-self-center px-4 border-right border-gray" >
+  <a href="https://www.jmcs.org.mx/">	  <b-img  src="{{ asset('/img/Journal_Chemistry.jpg')}} " fluid-grow alt="Fluid image"></b-img></a>
   </div>
   <div  class="col-5 col-md-3  align-self-center px-4 border-right border-gray " >
-  	  <b-img  src="./img/Boletin_Quimica.png" fluid-grow alt="Fluid image"></b-img>
+  	 <a href="http://www.bsqm.org.mx/"> <b-img  src="{{ asset('/img/Boletin_Quimica.png')}}" fluid-grow alt="Fluid image"></b-img></a>
   </div>
-  <div  class=" px-3  col-12 col-md-3  align-self-center" >
-  <div class="row">
-	<div class="col-3 align-self-center text-center">
-		<div  class="text-primary" style="font-size: 20px;"><i class="fa fa-phone text-secondary" aria-hidden="true"></i>  </div>
-    </div>
-    <div class="col-8 p-md-0 p-4">
-		<div class="text-black" style=""><div><b>Contacto</b></div>
-	  		<div>
-	  		 +5255 56626837
-	  		<div>
-	  		 +5255 56626823
-	  		</div>
-		</div>
-	</div>	
-	</div>
-	
-	<div class="col-3 align-self-center text-center">
+  <div  class="offset-md-0 offset-2 col-5 col-md-3  align-self-center px-4 border-right border-gray " >
+  	 <a href="https://espinshop.sqm.org.mx/"> <b-img  src="{{ asset('/img/espinshop.png')}}" fluid-grow alt="Fluid image"></b-img></a>
+  </div>
+  <div  class=" px-3  col-5 col-md-2  align-self-center" >
+  <div class="">
 		<div  class="text-primary" style="font-size: 20px;"><i class="fa fa-envelope text-secondary" aria-hidden="true"></i>  </div>
-    </div>
-    <div class="col-8 p-md-0 p-4 ">
+
 		<div class="text-black" style="   "><div><b>Correo</b></div>
 	 		soquimex@sqm.org.mx
 		</div>
-	</div>
+
   </div>
  </div>	
 </div>   
-<div class="row  justify-content-center menublue p-0 m-0" id="navbar">
-<nav class= "col-md-11 col-12 row  navbar navbar-expand navbar-white  shadow   m-0 p-0 py-1 navbar mt-0 bg-primary"  > 
-  <div class=" col-8 col-md-9 col-sm-7 text-white p-0 m-0">
-   <div>
-      <b-navbar  type="dark" >
-   
-    <b-navbar-toggle target="nav-collapse is-nav " class="text-white" ></b-navbar-toggle>
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-item href="#" ><div  class="text-light" >¿Quienes Somos?</div></b-nav-item>
-        <b-nav-item href="#"><div  class="text-light" >Directorio</div></b-nav-item>
-       	<b-nav-item href="#"><div  class="text-light" >Congresos</div></b-nav-item>
-       	<b-nav-item href="#"><div  class="text-light" >Premios</div></b-nav-item>
+<div class="container-fluid justify-content-center menublue p-0 m-0"  style="font-size: 20px; " id="navbar">
+<nav class= "navbar navbar-expand-lg navbar-fixed-top navbar-dark  shadow   m-0 p-0 py-0 navbar mt-0 bg-primary"   > 
+  <div class="collapse navbar-collapse" id="barPrin">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://sqm.org.mx/">Incio<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Quienes Somos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			<a  class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=3&amp;Itemid=111" class="level2"><span>Fundadores</span></a>
+           	<a class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=4&amp;Itemid=112" class="level2"><span>Escudo de la SQM</span></a>
+            <a class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=5&amp;Itemid=113" class="level2"><span>Misión, visión y metas</span></a>
+            <a class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=2&amp;Itemid=109" class="level2"><span>Nuestra historia</span></a>
+            <a  class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=106&amp;Itemid=189" class="level2"><span>Archivo histórico</span></a>
+        </div>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="https://sqm.org.mx/index.php?option=com_content&view=article&id=6&Itemid=103">Directorio</a>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Congresos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-       <b-nav-item href="#"><div  class="text-light" >Quimica en la vida</div></b-nav-item>
-       <b-nav-item href="#"><div  class="text-light" >Instalaciones</div></b-nav-item>
-       <b-nav-item href="{{url('/Membresia')}}"><div  class="text-light" >Membresia</div></b-nav-item>
+                 <a  class="dropdown-item"href="https://forms.gle/e4jbcir3jBuyGKeH9" target="_blank" class="level2"><span>Registro Asistente Congresos</span></a>
+                 <a  class="dropdown-item"href="/index.php?option=com_content&amp;view=article&amp;id=200&amp;Itemid=115" class="level2 parent"><span>Convocatoria Congreso Mexicano de Química</span></a>
+              <a  class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=280&amp;Itemid=240" class="level2 parent"><span>Congreso Nacional de Educación Química</span></a>
 
-      </b-navbar-nav>
-      <b-navbar-nav class="ml-auto">
-        <b-nav-item-dropdown right>
-          <!-- Using 'button-content' slot -->
-          <template v-slot:button-content>
-            <em class="text-white">User</em>
-          </template>
-          <b-dropdown-item href="#">Profile</b-dropdown-item>
-          <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+        <a  class="dropdown-item" href="https://forms.gle/Sm4VTezU5VfX8bgC9" class="level3"><span>Registro Ponente CNEQ</span></a>
+ 		<a  class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=68&amp;Itemid=182" class="level2"><span>Concurso Nacional de Carteles Estudiantiles</span></a>
+		 <a  class="dropdown-item"href="/index.php?option=com_content&amp;view=article&amp;id=14&amp;Itemid=120" class="level2"><span>Hotel</span></a>
+    	<a  class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=255&amp;Itemid=181" class="level2"><span>Programa  de actividades</span></a>
+     	<a  class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=43&amp;Itemid=146" class="level2"><span>ExpoQuímica</span></a>
+       	<a  class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=69&amp;Itemid=183" class="level2"><span>Cuotas / Formas de pago</span></a>
+      	<a  class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=64&amp;Itemid=179" class="level2"><span>Secciones Químicas</span></a>
+       <a  class="dropdown-item"  href="/index.php?option=com_content&amp;view=article&amp;id=92&amp;Itemid=226" class="level2"><span>Colección Memorias</span></a>
+       <a  class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=184&amp;Itemid=188" class="level2"><span>Congresos pasados</span></a>
    </div>
-   
-  </div>
-	<div style="font-size: 30px; text-align: right;"  class="col-4 col-md-3 col-sm-5">
+
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Premios
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+            <a  class="dropdown-item"  href="/index.php?option=com_content&amp;view=article&amp;id=20&amp;Itemid=126" class="level2 parent"><span>Premio Andrés Manuel del Río</span></a>
+            <a  class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=21&amp;Itemid=127" class="level3"><span>Lista de premiados</span></a> 
+            <a  class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=22&amp;Itemid=128" class="level2 parent"><span>Premio Mario J.  Molina</span></a> 
+            <a  class="dropdown-item" href="/index.php?option=com_content&amp;view=article&amp;id=183&amp;Itemid=225" class="level3"><span>Convocatoria en Extenso</span></a>
+            <a  class="dropdown-item"  href="/index.php?option=com_content&amp;view=article&amp;id=182&amp;Itemid=224" class="level3"><span>Premiados Mario M.</span></a> 
+            <a  class="dropdown-item"  href="/index.php?option=com_content&amp;view=article&amp;id=26&amp;Itemid=130" class="level2 parent"><span>Premios a las Mejores Tesis</span></a>
+        	<a  class="dropdown-item"  href="/index.php?option=com_content&amp;view=article&amp;id=26&amp;Itemid=133" class="level3"><span>Convocatoria Tesis</span></a>
+            <a  class="dropdown-item"  href="/index.php?option=com_content&amp;view=article&amp;id=28&amp;Itemid=132" class="level3"><span>Lista de premiados</span></a>
+            <a  class="dropdown-item"  href="/index.php?option=com_wrapper&amp;view=wrapper&amp;Itemid=239" class="level3"><span>Formato-Tesis</span></a>
+      </div>
+        </li>
+      
+       <li class="nav-item"><a href="/index.php?option=com_content&amp;view=article&amp;id=125&amp;Itemid=107" class="nav-link"><span>Instalaciones</span></a></li>
+      
+     </ul>  
+  	</div>
+
+	<div class="navbar-brand" style=" text-align: right;" >
         <b><i class="fab fa-facebook text-light"  ></i></b>
         <b><i class="fab fa-youtube text-light"  ></i></b>   
         <b><i class="fab fa-twitter text-light"  ></i></b>
         <b><i class="fab fa-instagram text-light"  ></i></b>
-    </div>  
-
+    </div>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barPrin" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>    
 </nav>
-</div>
-
+</div> 
 </div> 

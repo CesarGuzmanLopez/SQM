@@ -11,7 +11,6 @@
     <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
     <div class="invalid-feedback">Example invalid feedback text</div>
   </div>
-
   <div class="custom-control custom-radio">
     <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
     <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>
@@ -24,10 +23,10 @@
 
   <div class="form-group">
     <select class="custom-select" required>
-      <option value="">Open this select menu</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
+      <option value=""></option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
     </select>
     <div class="invalid-feedback">Example invalid custom select feedback</div>
   </div>
@@ -38,9 +37,8 @@
     <div class="invalid-feedback">Example invalid custom file feedback</div>
   </div>
 </form>
- 				</div>
- 		</div>
+ </div>
+ 	</div>
 	</div>
 </div>
-
 @endsection

@@ -61,3 +61,7 @@ function myFunction() {
 	
 }
 
+$( document ).ready(function() {
+    $('#myModal').modal('toggle')
+});
+

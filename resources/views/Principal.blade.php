@@ -1,6 +1,7 @@
 @extends('layouts.Plantilla_Principal')
 @section('content_main') 
-<div  class="container-fluid justify-content-center p-0" id="AUX"> 
+<div id="AUX">
+<div  class="container-fluid justify-content-center p-0" > 
  <div class="row justify-content-center p-0  m-0"> 
   <div class="col-12 m-0   p-0 bg-secondary text-light" id="slider_prin">
    <div class="container-fluid  p-0 m-0">
@@ -8,90 +9,92 @@
      <div class="col-12 m-0  p-0"> 
       <b-carousel
           id="carousel-1"
-          :interval="20000"
-
+          :interval="20000" 
           background="#ababab"
           img-width="100%"
           img-height="2800"
-          style="text-shadow: 1px 1px 2px #333;" 
-      >
-       <b-carousel-slide class="p-0 m-0 "  img-height="240" img-src="img/A_SQM.jpg"  >
-		
-       </b-carousel-slide> 
+          style="text-shadow: 1px 1px 2px #333;" >
+      	<b-carousel-slide class="p-0 m-0 "  img-height="240" img-src="{{ asset('img/A_SQM.jpg')}}"  >
+        </b-carousel-slide> 
       </b-carousel>
      </div> 	
 	</div>
    </div>
   </div>
  </div> 
- 
- <div class="d-flex flex-row">
- 
+ <div class="d-flex flex-row"> 
   <div class="row  m-0">
- 	<div class="col p-0  m-0">
-  		<b-img src="img/1.png" fluid class="p-0"></b-img> 
+ 	<div class="col-md col-6 p-0  m-0">
+  		<b-img src="{{ asset('img/1.png')}}" fluid class="p-0"></b-img> 
     </div>
- 	<div class="col p-0">
-        		<b-img src="img/2.png" fluid class="p-0"></b-img> 
+ 	<div class="col-md col-6 p-0  m-0">
+		<b-img src="{{ asset('img/2.png')}}" fluid class="p-0"></b-img> 
     </div>
- 	<div class="col p-0">
-      		<b-img src="img/3.png" fluid class="p-0"></b-img> 
- 	    </div>
- 	
- 	<div class="col p-0">
-      		<b-img src="img/4.png" fluid class="p-0"></b-img> 
+ 	<div class="col-md col-6 p-0  m-0">
+  		<b-img src="{{ asset('img/3.png')}}" fluid class="p-0"></b-img> 
     </div>
- 	<div class="col p-0">
-      		<b-img src="img/5.png" fluid class="p-0"></b-img> 
+ 	<div class="col-md col-6 p-0  m-0">
+      	<b-img src="{{ asset('img/4.png')}}" fluid class="p-0"></b-img> 
+    </div>
+ 	<div class="col-md col-6 p-0  m-0">
+      	<b-img src="{{ asset('img/5.png')}}" fluid class="p-0"></b-img> 
     </div> 
-  </div >
-
- 
+ 	<div class="col-md col-6 p-0  m-0">
+  		<b-img src="{{ asset('img/1.png')}}" fluid class="p-0"></b-img> 
+    </div>
+ 	<div class="col-md col-6 p-0  m-0">
+      	<b-img src="{{ asset('img/2.png')}}" fluid class="p-0"></b-img> 
+    </div>
+ 	<div class="col-md col-6 p-0  m-0">
+      	<b-img src="{{ asset('img/3.png')}}" fluid class="p-0"></b-img> 
+	</div> 
+ 	<div class="col-md col-6 p-0  m-0">
+    	<b-img src="{{ asset('img/4.png')}}" fluid class="p-0"></b-img> 
+    </div>
+ 	<div class="col-md col-6 p-0  m-0">
+    	<b-img src="{{ asset('img/5.png')}}" fluid class="p-0"></b-img> 
+    </div> 
+  </div > 
  </div>
- <div class="row container-fluid justify-content-center"> 
- 	<div class="pt-5 mt-4" style="font-size: 40px;">
- 		<p class="px-3 text-primary">CONVOCATORIAS</p>
- 	</div> 
- </div>
-<div class=" row m-0 p-5 ">
- <b-card-group class="row m-0" deck>
 
-    <b-card title="Congreso mexicano de química" img-src="img/A.png" img-alt="Image" img-top>
-      <b-card-text>
-        This is a wider card with supporting text below as a natural lead-in to additional content.
-        This content is a little bit longer.
-      </b-card-text>
-      <template v-slot:footer>
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </template>
-    </b-card>
-    <b-card title="Congreso mexicano de química" img-src="img/A.png" img-alt="Image" img-top>
-      <b-card-text>
-       </b-card-text>
-      <template v-slot:footer>
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </template>
-    </b-card>
 
-    <b-card title="Premio nacional de química 'Andrés Manual Del Rio'" img-src="img/B.png" img-alt="Image" img-top>
-      <b-card-text>
-       
-      </b-card-text>
-      <template v-slot:footer>
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </template>
-    </b-card>
-    <b-card title="Premio a las mejores tesis de licenciatura, maestria y doctorado" img-src="img/C.png" img-alt="Image" img-top>
-      <b-card-text>
-        
-      </b-card-text>
-      <template v-slot:footer>
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </template>
-    </b-card>
-  </b-card-group>
-</div>
+
+
+
+
 
 </div>
 
+<!-- a  data-toggle="modal" data-target="#myModal">Large modal</a-->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="myModal" aria-labelledby="myModal" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">APORTACIONES DE LAS CIENCIAS QUÍMICAS A LA SOLUCIÓN DE PROBLEMAS NACIONALES EN MATERIA DE HIDROCARBUROS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    
+    		
+    
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-6 justify-content-center">
+			    <b-img src="{{ asset('img/cartel.jpg')}}" fluid class="p-0"></b-img> 
+			</div>
+			<div class="col-md-6 justify-content-center">
+						    <b-img src="{{ asset('img/cartel.png')}}" fluid class="p-0"></b-img> 
+			
+			</div>
+		</div>
+		 </div>
+	  <div class="modal-footer">
+         <a class="button" type="button"  href="https://sqm.org.mx/index.php?option=com_content&view=article&id=281:1-foro&catid=8&Itemid=101" class="btn btn-secondary" type="submit">Mas información</a>
+      </div> 
+    </div>
+  </div>
+</div>	
+</div>
 @endsection

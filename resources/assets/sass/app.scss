@@ -17,6 +17,12 @@ footer{
 	margin-bottom: -10px;
 	margin-top: 10px;
 }
+@include media-breakpoint-down(md) {
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+}
 #Menu{
 	.nav-link{
 		padding: 0rem 1rem; 
