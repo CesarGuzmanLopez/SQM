@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=0.7"><meta name="Classification" content="Quimica "><meta name="msapplication-TileColor" content=" #009900" />
       <meta charset="utf-8">
   
-      <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?<?=date("my")?>2">
+      <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?<?=date("my")?>1.0">
           @section('styles') 
    	  @show	  
    </head>
@@ -49,7 +49,7 @@
           </div>
     </footer>
 @show
-    <script type="text/javascript" src="{{asset('js/app.js') }}?<?="0.".date("my").".2"?>"></script>
+    <script type="text/javascript" src="{{asset('js/app.js') }}?<?="0.".date("my")."1.2"?>"></script>
 @yield('scripts')
    </body>
 </html>

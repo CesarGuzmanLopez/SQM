@@ -6,6 +6,7 @@
  				<h2 clasS="text-center">Calcular precio de membresia</h2>
  				<div class="container row">
  					<form class="was-validated">
+ 					
   <div class="custom-control custom-checkbox mb-3">
     <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
     <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>

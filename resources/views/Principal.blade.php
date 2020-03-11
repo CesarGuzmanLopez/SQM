@@ -14,59 +14,53 @@
           img-width="100%"
           img-height="2800"
           style="text-shadow: 1px 1px 2px #333;" >
+      	
       	<b-carousel-slide class="p-0 m-0 "  img-height="240" img-src="{{ asset('img/A_SQM.jpg')}}"  >
-        </b-carousel-slide> 
+      	
+        </b-carousel-slide>
       </b-carousel>
      </div> 	
 	</div>
    </div>
   </div>
- </div> 
+ </div>   
  <div class="d-flex flex-row"> 
-  <div class="row  m-0">
- 	<div class="col-md col-6 p-0  m-0">
+  
+  <div class="row  m-0 justify-content-center" id="menu-img">
+    
+ 	<div class="col-xl  col-md-3  col-4 p-0  m-0 img-contenedor">
   		<b-img src="{{ asset('img/1.png')}}" fluid class="p-0"></b-img> 
     </div>
- 	<div class="col-md col-6 p-0  m-0">
+ 	<div class="col-xl col-md-3 col-4 p-0  m-0 img-contenedor">
 		<b-img src="{{ asset('img/2.png')}}" fluid class="p-0"></b-img> 
     </div>
- 	<div class="col-md col-6 p-0  m-0">
+ 	<div class="col-xl col-md-3 col-4 p-0  m-0 img-contenedor">
   		<b-img src="{{ asset('img/3.png')}}" fluid class="p-0"></b-img> 
     </div>
- 	<div class="col-md col-6 p-0  m-0">
+ 	<div class="col-xl col-md-3 col-4 p-0  m-0 img-contenedor">
       	<b-img src="{{ asset('img/4.png')}}" fluid class="p-0"></b-img> 
     </div>
- 	<div class="col-md col-6 p-0  m-0">
+ 	<div class="col-xl col-md-3 col-4 p-0  m-0 img-contenedor">
       	<b-img src="{{ asset('img/5.png')}}" fluid class="p-0"></b-img> 
     </div> 
- 	<div class="col-md col-6 p-0  m-0">
-  		<b-img src="{{ asset('img/1.png')}}" fluid class="p-0"></b-img> 
+
+ 	<div class="col-xl col-md-3 col-4 p-0  m-0 img-contenedor">
+  		<b-img src="{{ asset('img/6.png')}}" fluid class="p-0"></b-img> 
     </div>
- 	<div class="col-md col-6 p-0  m-0">
-      	<b-img src="{{ asset('img/2.png')}}" fluid class="p-0"></b-img> 
+ 	<div class="col-xl col-md-3 col-4 p-0  m-0 img-contenedor">
+      	<b-img src="{{ asset('img/7.png')}}" fluid class="p-0"></b-img> 
     </div>
- 	<div class="col-md col-6 p-0  m-0">
-      	<b-img src="{{ asset('img/3.png')}}" fluid class="p-0"></b-img> 
+ 	<div class="col-xl col-md-3 col-4 p-0  m-0 img-contenedor">
+      	<b-img src="{{ asset('img/8.png')}}" fluid class="p-0"></b-img> 
 	</div> 
- 	<div class="col-md col-6 p-0  m-0">
-    	<b-img src="{{ asset('img/4.png')}}" fluid class="p-0"></b-img> 
+ 	<div class="col-xl col-md-3 col-4 p-0  m-0 img-contenedor">
+    	<b-img src="{{ asset('img/9.png')}}" fluid class="p-0"></b-img> 
     </div>
- 	<div class="col-md col-6 p-0  m-0">
-    	<b-img src="{{ asset('img/5.png')}}" fluid class="p-0"></b-img> 
-    </div> 
+
   </div > 
- </div>
-
-
-
-
-
-
-
+ </div> 
 </div>
-
 <!-- a  data-toggle="modal" data-target="#myModal">Large modal</a-->
-
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="myModal" aria-labelledby="myModal" >
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -76,25 +70,21 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-    
-    		
-    
 		<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-4 col-6 justify-content-center">
 			    <b-img src="{{ asset('img/cartel.jpg')}}" fluid class="p-0"></b-img> 
-			</div>
+			</div> 
 			<div class="col-md-6 justify-content-center">
-						    <b-img src="{{ asset('img/cartel.png')}}" fluid class="p-0"></b-img> 
-			
+			 	<b-img src="{{ asset('img/cartel.png')}}" fluid class="p-0"></b-img>   
 			</div>
 		</div>
 		 </div>
-	  <div class="modal-footer">
+		 <div class="modal-footer">
          <a class="button" type="button"  href="https://sqm.org.mx/index.php?option=com_content&view=article&id=281:1-foro&catid=8&Itemid=101" class="btn btn-secondary" type="submit">Mas información</a>
       </div> 
     </div>
   </div>
-</div>	
+</div>
 </div>
 @endsection

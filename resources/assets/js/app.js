@@ -54,14 +54,13 @@ function myFunction() {
 		navbar.classList.add("sticky");
 		contentprin.classList.add("content_prin");
 		
-	} else {
+	}else {
 		navbar.classList.remove("sticky");
 		contentprin.classList.remove("content_prin");
 	}
-	
 }
 
 $( document ).ready(function() {
-    $('#myModal').modal('toggle')
+    $('#myModal').modal('toggle');
+    console.log ("hola");
 });
-

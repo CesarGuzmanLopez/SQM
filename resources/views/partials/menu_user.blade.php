@@ -24,7 +24,7 @@
 	 <b-img  src="{{ asset('/img/SQM.png')}}" fluid-grow alt="Fluid image"></b-img>	</a>
   </div>
   <div  class=" col-5 col-md-3 align-self-center px-4 border-right border-gray" >
-  <a href="https://www.jmcs.org.mx/">	  <b-img  src="{{ asset('/img/Journal_Chemistry.jpg')}} " fluid-grow alt="Fluid image"></b-img></a>
+  <a href="https://www.jmcs.org.mx/">	  <b-img  src="{{ asset('/img/Journal_Chemistry.png')}} " fluid-grow alt="Fluid image"></b-img></a>
   </div>
   <div  class="col-5 col-md-3  align-self-center px-4 border-right border-gray " >
   	 <a href="http://www.bsqm.org.mx/"> <b-img  src="{{ asset('/img/Boletin_Quimica.png')}}" fluid-grow alt="Fluid image"></b-img></a>

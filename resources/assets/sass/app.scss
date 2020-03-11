@@ -72,5 +72,33 @@ footer{
 	animation-duration: 3s;
 	margin-top: 70px
 	!important;
+	
+}
+@media only screen and ( min-width: 1200px) {
+	#menu-img{
+		position: relative;
+		z-index: 10;
+	}
+	.img-contenedor img { 
+		width:100%;
+		z-index: 10;
+	}
+	
+	.img-contenedor:hover img {
+	-webkit-transition:all .3s ease; /* Safari y Chrome */
+	-moz-transition:all .3s ease; /* Firefox */
+	-o-transition:all .3s ease; /* IE 9 */
+	-ms-transition:all .3s ease; /* Opera */
+	transition:all .3s ease; 
+	border-radius: 4px;
+	box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.59) !important;
+	position: absolute;
+	-webkit-transform:scale(1.7);
+	-moz-transform:scale(1.7);
+	-ms-transform:scale(1.7);
+	-o-transform:scale(1.7);
+	transform:scale(1.7);
+	z-index: 34 !important;
+	}
 }
 @import 'variables';
